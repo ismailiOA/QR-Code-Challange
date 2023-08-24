@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- styles part -->
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .big{
+      background-color: hsl(212, 45%, 89%);
+      display: grid;
+      place-items: center;
+      height: 100vh; /* Adjust the height as needed */
+    }
+
+    .container{
+      background-color: hsl(0, 0%, 100%);
+      width: 280px;
+      height: 430px;
+      border-radius: 15px;
+    }
+
+    h3{
+      text-align: center;
+      margin: 10px;
+
+    }
+
+    img{
+      border-radius: 20px;
+      width: 260px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 10px;
+    }
+
+    p{
+      margin: 20px;
+      text-align: center;
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+    }
+
+    /* Mobile */
+@media (max-width: 375px) {
+  body {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  body {
+    font-size: 15px;
+    padding: 30px;
+  }
+}
+
+
+  </style>
+  
+</head>
+<body>
+
+  <div class="big">
+    <div class="container">
+      <div>
+        <img class="img" src="./images/image-qr-code.png" alt="qr-code">
+        <h3 class="qoraal">To improve my programming skills
+        i have to build projects  
+        </h3>
+        <p>Scan the QR code to visit Frontend Mentor and
+          take your coding skills
+           to the next level
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
